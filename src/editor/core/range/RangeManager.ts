@@ -448,7 +448,7 @@ export class RangeManager {
     this.range.zone = this.draw.getZone().getZone()
     // 激活控件
     const control = this.draw.getControl()
-    if (~startIndex && ~endIndex) {
+    if (~startIndex && ~endIndex && startIndex === endIndex) {
       const elementList = this.draw.getElementList()
       const element = elementList[startIndex]
       if (element?.controlId) {
