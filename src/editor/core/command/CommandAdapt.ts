@@ -1601,7 +1601,9 @@ export class CommandAdapt {
     }
     return deepClone<RangeContext>({
       isCollapsed,
+      startIndex,
       startElement,
+      endIndex,
       endElement,
       startPageNo,
       endPageNo,

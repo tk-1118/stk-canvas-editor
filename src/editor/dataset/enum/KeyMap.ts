@@ -71,6 +71,7 @@ export enum KeyMap {
   Y_UPPERCASE = 'Y',
   Z_UPPERCASE = 'Z',
   ZERO = '0',
+  TOP = '00',
   ONE = '1',
   TWO = '2',
   THREE = '3',

@@ -12,6 +12,14 @@ export const titleKeys: IRegisterShortcut[] = [
     }
   },
   {
+    key: KeyMap.TOP,
+    alt: true,
+    ctrl: true,
+    callback: (command: Command) => {
+      command.executeTitle(TitleLevel.TOP)
+    }
+  },
+  {
     key: KeyMap.ONE,
     alt: true,
     ctrl: true,

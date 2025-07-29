@@ -21,6 +21,8 @@ export type RangeRect = IElementFillRect
 
 export type RangeContext = {
   isCollapsed: boolean
+  startIndex: number
+  endIndex: number
   startElement: IElement
   endElement: IElement
   startPageNo: number

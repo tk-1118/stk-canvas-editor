@@ -2,6 +2,7 @@ import { EditorZone } from '../dataset/enum/Editor'
 import { IElement } from './Element'
 
 export interface ITitleSizeOption {
+  defaultTopSize?: number
   defaultFirstSize?: number
   defaultSecondSize?: number
   defaultThirdSize?: number

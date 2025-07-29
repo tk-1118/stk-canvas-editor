@@ -32,6 +32,7 @@ enum ElementType {
 }
 
 enum TitleLevel {
+  TOP = 'top',
   FIRST = 'first',
   SECOND = 'second',
   THIRD = 'third',
@@ -41,6 +42,7 @@ enum TitleLevel {
 }
 
 const titleOrderNumberMapping: Record<TitleLevel, number> = {
+  [TitleLevel.TOP]: 0,
   [TitleLevel.FIRST]: 1,
   [TitleLevel.SECOND]: 2,
   [TitleLevel.THIRD]: 3,

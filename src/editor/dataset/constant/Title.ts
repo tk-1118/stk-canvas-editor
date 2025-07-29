@@ -2,6 +2,7 @@ import { ITitleOption, ITitleSizeOption } from '../../interface/Title'
 import { TitleLevel } from '../enum/Title'
 
 export const defaultTitleOption: Readonly<Required<ITitleOption>> = {
+  defaultTopSize: 28,
   defaultFirstSize: 26,
   defaultSecondSize: 24,
   defaultThirdSize: 22,
@@ -11,6 +12,7 @@ export const defaultTitleOption: Readonly<Required<ITitleOption>> = {
 }
 
 export const titleSizeMapping: Record<TitleLevel, keyof ITitleSizeOption> = {
+  [TitleLevel.TOP]: 'defaultTopSize',
   [TitleLevel.FIRST]: 'defaultFirstSize',
   [TitleLevel.SECOND]: 'defaultSecondSize',
   [TitleLevel.THIRD]: 'defaultThirdSize',
@@ -20,6 +22,7 @@ export const titleSizeMapping: Record<TitleLevel, keyof ITitleSizeOption> = {
 }
 
 export const titleOrderNumberMapping: Record<TitleLevel, number> = {
+  [TitleLevel.TOP]: 0,
   [TitleLevel.FIRST]: 1,
   [TitleLevel.SECOND]: 2,
   [TitleLevel.THIRD]: 3,
